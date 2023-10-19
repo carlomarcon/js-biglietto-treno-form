@@ -6,6 +6,7 @@
 
 .Form {
   text-align: center;
+  background-color: antiquewhite;
 }
 
 .wrapper-answers {
@@ -13,12 +14,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: antiquewhite;
 }
 
 .col-answers {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.col-answers button:nth-child(2) {
+  margin-left: 4px;
 }
 
 .col-answers div {
@@ -31,7 +39,28 @@
 
 .Ticket-visible {
   display: inline-block;
-  background-color: red;
-  color: white;
+  background-color: #f2f0f1;
+  color: black;
   border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+}
+
+.info-ticket {
+  display: flex;
+  height: 100px;
+  line-height: 20px;
+  justify-content: space-between;
+}
+
+.info-ticket h1 {
+  text-align: center;
+}
+
+.info-ticket div {
+  font-size: 15px;
+  border: 1px solid black;
+  width: 50%;
 }

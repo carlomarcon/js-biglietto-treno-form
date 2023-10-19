@@ -1,4 +1,5 @@
 const button = document.querySelector(".col-answers button:first-child");
+const button2 = document.querySelector(".col-answers button:nth-child(2)");
 
 button.addEventListener("click", function () {
   // RACCOLTA DATI
@@ -17,7 +18,7 @@ button.addEventListener("click", function () {
 
   document.getElementById("full-name").innerHTML = Name;
 
-  // LOGICA
+  // LOGICA E OUTPUT
 
   if (isNaN(Km)) {
     alert("Errore nei dati, riprovare");
@@ -33,4 +34,8 @@ button.addEventListener("click", function () {
     document.getElementById("priceToSet").innerHTML =
       PriceOld.toFixed(2) + " €";
   }
+});
+
+button2.addEventListener("click", function () {
+  location.reload();
 });
