@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Form {
+  text-align: center;
+}
+
+.wrapper-answers {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-answers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-answers div {
+  width: 25%;
+}
