@@ -9,8 +9,17 @@ button.addEventListener("click", function () {
   let price = Km * 0.21;
   const Age = document.querySelector(".Age option:checked").value;
   console.log(Age, Name, Km, price);
+  // VISIBILITA BIGLIETTO
 
-  if (isNaN(Km && Name)) {
+  const Ticket = document.querySelector("#Ticket-hidden");
+  Ticket.classList.remove("Ticket-shadow");
+  Ticket.classList.add("Ticket-visible");
+
+  document.getElementById("full-name").innerHTML = Name;
+
+  // LOGICA
+
+  if (isNaN(Km)) {
     alert("Errore nei dati, riprovare");
     location.reload();
   } else if (Age === "Maggiorenne") {
